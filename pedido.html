@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="bootstrap.css">
+  <script src="./bootstrap.bundle.js"></script>
+
+  <title>Minimercado GN</title>
+</head>
+
+<body>
+  <div id="cabecalho" class="container">
+    <nav class="navbar navbar-expand navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./produtos.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./servicos.html">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./pedido.html">Fazer Pedido</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="corpo" class="container">
+    <div class="mt-3">
+      <h3>Fazer Pedido</h3>
+
+      <p class="mb-3 fst-italic"><small>*: campo obrigatório</small></p>
+
+      <form>
+        <div class="row">
+          <!-- Nome -->
+          <div class="col-12 col-sm-6 mb-3">
+            <label for="nomeInput" class="form-label">Nome Completo*</label>
+            <input type="text" class="form-control" id="nomeInput" required>
+          </div>
+
+          <!-- CPF -->
+          <div class="col-12 col-sm-6 mmb-3">
+            <label for="cpfInput" class="form-label">CPF*</label>
+            <input type="text" class="form-control" id="cpfInput" required>
+          </div>
+        </div>
+        
+        <div class="row">
+          <!-- E-mail -->
+          <div class="col-12 col-sm-6 mb-3">
+            <label for="emailInput" class="form-label">E-mail*</label>
+            <input type="email" class="form-control" id="emailInput" required>
+          </div>
+  
+          <!-- Telefone -->
+          <div class="col-12 col-sm-6 mb-3">
+            <label for="telefoneInput" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="telefoneInput" pattern="[0-9]{5}-[0-9]{4}">
+          </div>
+        </div>
+
+
+        <!-- Produtos -->
+        <div class="mb-3 border-top">
+          <p class="mb-0 mt-1">Selecione os produtos desejados:</p>
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="batataCheck" id="batataCheck">
+                <label class="form-check-label" for="batataCheck">
+                  Batata Branca (500 g)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="cebolaCheck" id="cebolaCheck">
+                <label class="form-check-label" for="cebolaCheck">
+                  Cebola (500 g)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="tomateCheck" id="tomateCheck">
+                <label class="form-check-label" for="tomateCheck">
+                  Tomate Italiano (500 g)
+                </label>
+              </div>
+            </div>
+            
+            <div class="col-12 col-md-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="arrozCheck" id="arrozCheck">
+                <label class="form-check-label" for="arrozCheck">
+                  Arroz Tipo 1 (1 kg)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="feijaoCheck" id="feijaoCheck">
+                <label class="form-check-label" for="feijaoCheck">
+                  Feijão Preto (1 kg)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="acucarCheck" id="acucarCheck">
+                <label class="form-check-label" for="acucarCheck">
+                  Açúcar Refinado (1 kg)
+                </label>
+              </div>
+            </div>
+            
+            <div class="col-12 col-md-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="detergenteCheck" id="detergenteCheck">
+                <label class="form-check-label" for="detergenteCheck">
+                  Detergente (500 ml)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="desinfetanteCheck" id="desinfetanteCheck">
+                <label class="form-check-label" for="desinfetanteCheck">
+                  Desinfetante (500 ml)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="cremeDentalCheck" id="cremeDentalCheck">
+                <label class="form-check-label" for="cremeDentalCheck">
+                  Creme Dental (180 g)
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Serviço (retirada/entrega) -->
+        <div class="mb-3">
+          <p class="mb-0">Selecione o serviço de retirada ou entrega:</p>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="servicoRadio" id="servicoRadio1">
+                <label class="form-check-label" for="servicoRadio1">
+                  Retirada
+                </label>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="servicoRadio" id="servicoRadio2" checked>
+                <label class="form-check-label" for="servicoRadio2">
+                  Entrega
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Agendamento serviço -->
+         <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 mb-3">
+            <label for="agendamentoInput" class="form-label">Informe a data e a hora para agendamento da retirada dos produtos na loja ou da entrega:</label>
+            <input class="form-control" type="datetime-local" id="agendamentoInput">
+          </div>
+         </div>
+
+        <!-- Texto endereço -->
+        <div class="border-top">
+          <p class="mt-1">No caso de entrega, informe o endereço de entrega:</p>
+        </div>
+
+        <!-- Endereço entrega -->
+         <div class="row">
+          <div class="col-12 col-sm-9 mb-3">
+            <label for="enderecoInput" class="form-label">Endereço</label>
+            <input type="text" class="form-control" id="enderecoInput">
+          </div>
+
+          <div class="col-3 mb-3">
+            <label for="numeroInput" class="form-label">Nº</label>
+            <input type="number" class="form-control" id="numeroInput">
+          </div>
+
+          <div class="col-9 col-sm-6 col-md-4 mb-3">
+            <label for="bairroSelect" class="form-label">Bairro</label>
+            <select class="form-select" id="bairroSelect" aria-describedby="bairroHelp">
+              <option selected disabled>Selecione</option>
+              <option value="azenha">Azenha</option>
+              <option value="centro">Centro Histórico</option>
+              <option value="cidade-baixa">Cidade Baixa</option>
+              <option value="medianeira">Medianeira</option>
+              <option value="menino-deus">Menino Deus</option>
+              <option value="praia-de-belas">Praia de Belas</option>
+              <option value="santa-tereza">Santa Tereza</option>
+              <option value="santana">Santana</option>
+            </select>
+            <div id="bairroHelp" class="form-text">A entrega está disponível para os bairros listados acima.</div>
+          </div>
+        </div>
+        
+        <div class="mb-3 pt-3 border-top text-center">
+          <button type="submit" class="btn btn-primary">Fazer Pedido</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="rodape" class="container">
+    <footer class="text-start bg-body-tertiary text-muted border-top mt-3">
+      <section class="">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-12 col-lg-4">
+              <h6 class="text-uppercase fw-bold">
+                Minimercado GN
+              </h6>
+              <p>
+                Página desenvolvida para a disciplina de Fundamentos de Sistemas Web, da <a
+                  href="https://online.pucrs.br/">PUCRS</a>.
+              </p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+              <h6 class="text-uppercase fw-bold">
+                Aluno
+              </h6>
+              <p>
+                Eduardo Gabe Nery
+              </p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+              <h6 class="text-uppercase fw-bold">
+                Professores
+              </h6>
+              <p>
+                Andrea Aparecida Konzen <br />
+                Anderson Terroso
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="text-center">
+        <p>
+          Porto Alegre <br />
+          2025
+        </p>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

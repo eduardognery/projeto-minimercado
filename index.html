@@ -1,36 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="bootstrap.css">
+  <script src="./bootstrap.bundle.js"></script>
+
   <title>Minimercado GN</title>
 </head>
+
 <body>
-  <div id="cabecalho">
-    <nav>
-      <h1>Minimercado GN</h1>
-      <ul>
-        <li>Início</li>
-        <li><a href="./produtos.html">Produtos</a></li>
-        <li><a href="./servicos.html">Serviços</a></li>
-      </ul>
-      <hr>
+  <div id="cabecalho" class="container">
+    <nav class="navbar navbar-expand navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./produtos.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./servicos.html">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pedido.html">Fazer Pedido</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </div>
 
-  <div id="corpo">
-    <h3>Seja bem-vindo ao Minimercado GN!</h3>
+  <div id="corpo" class="container">
+    <h3 class="mt-3">Seja bem-vindo ao Minimercado GN!</h3>
 
-    <p>Navegue pelos links acima para buscar produtos e serviços.</p>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/carrosel/frutas.jpg" class="d-block w-100" alt="Imagem de Frutas">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/carrosel/higiene.jpg" class="d-block w-100" alt="Imagem de Produtos de Higiente">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/carrosel/comida.jpg" class="d-block w-100" alt="Imagem de Alimentos Não-perecíveis	">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </div>
 
-  <div id="rodape">
-    <footer>
-      <hr>
-      <p>Página desenvolvida para a disciplina de Fundamentos de Sistemas Web, da <a href="https://online.pucrs.br/">PUCRS</a></p>
-      <p>Aluno: Eduardo Gabe Nery - <a href="mailto:eduardognery@gmail.com">eduardognery@gmail.com</a></p>
-      <p>Profs. Andrea Aparecida Konzen e Anderson Terroso</p>
+  <div id="rodape" class="container">
+    <footer class="text-start bg-body-tertiary text-muted border-top mt-3">
+      <section class="">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-12 col-lg-4">
+              <h6 class="text-uppercase fw-bold">
+                Minimercado GN
+              </h6>
+              <p>
+                Página desenvolvida para a disciplina de Fundamentos de Sistemas Web, da <a
+                  href="https://online.pucrs.br/">PUCRS</a>.
+              </p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+              <h6 class="text-uppercase fw-bold">
+                Aluno
+              </h6>
+              <p>
+                Eduardo Gabe Nery
+              </p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+              <h6 class="text-uppercase fw-bold">
+                Professores
+              </h6>
+              <p>
+                Andrea Aparecida Konzen <br />
+                Anderson Terroso
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="text-center">
+        <p>
+          Porto Alegre <br />
+          2025
+        </p>
+      </div>
     </footer>
   </div>
+
 </body>
+
 </html>

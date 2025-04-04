@@ -1,46 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="bootstrap.css">
+  <script src="./bootstrap.bundle.js"></script>
+
   <title>Minimercado GN</title>
 </head>
+
 <body>
-  <div id="cabecalho">
-    <nav>
-      <h1>Minimercado GN</h1>
-      <ul>
-        <li><a href="./index.html">Início</a></li>
-        <li><a href="./produtos.html">Produtos</a></li>
-        <li>Serviços</li>
-      </ul>
-      <hr>
+  <div id="cabecalho" class="container">
+    <nav class="navbar navbar-expand navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./produtos.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./servicos.html">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pedido.html">Fazer Pedido</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </div>
 
-  <div id="corpo">
-    <div class="lista-servicos">
-      <div class="servico">
-        <h3>Retirada no Local</h3>
-        <p>O cliente deve buscar os produtos solicitados na loja (atente-se ao horário de funcionamento da loja).</p>
-        <p>0,00</p>
-      </div>
+  <div id="corpo" class="container">
+    <div class="mt-3">
+      <h3>Serviços</h3>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card mt-1">
+            <div class="card-body">
+              <h5 class="card-title">Retirada no Local</h5>
+              <p class="card-text">
+                O cliente deve buscar os produtos solicitados na loja (atente-se ao horário de funcionamento da loja).
+                <br />
+                0,00
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <div class="servico">
-        <h3>Entrega</h3>
-        <p>Enviamos os produtos solicitados para o endereço informado (consulte os bairros disponíveis).</p>
-        <p>4,99</p>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card mt-1">
+            <div class="card-body">
+              <h5 class="card-title">Entrega</h5>
+              <p class="card-text">
+                Enviamos os produtos solicitados para o endereço informado (consulte os bairros disponíveis).
+                <br />
+                4,99
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div id="rodape">
-    <footer>
-      <hr>
-      <p>Página desenvolvida para a disciplina de Fundamentos de Sistemas Web, da <a href="https://online.pucrs.br/">PUCRS</a></p>
-      <p>Aluno: Eduardo Gabe Nery - <a href="mailto:eduardognery@gmail.com">eduardognery@gmail.com</a></p>
-      <p>Profs. Andrea Aparecida Konzen e Anderson Terroso</p>
+  <div id="rodape" class="container">
+    <footer class="text-start bg-body-tertiary text-muted border-top mt-3">
+      <section class="">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-12 col-lg-4">
+              <h6 class="text-uppercase fw-bold">
+                Minimercado GN
+              </h6>
+              <p>
+                Página desenvolvida para a disciplina de Fundamentos de Sistemas Web, da <a
+                  href="https://online.pucrs.br/">PUCRS</a>.
+              </p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+              <h6 class="text-uppercase fw-bold">
+                Aluno
+              </h6>
+              <p>
+                Eduardo Gabe Nery
+              </p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+              <h6 class="text-uppercase fw-bold">
+                Professores
+              </h6>
+              <p>
+                Andrea Aparecida Konzen <br />
+                Anderson Terroso
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="text-center">
+        <p>
+          Porto Alegre <br />
+          2025
+        </p>
+      </div>
     </footer>
   </div>
+
 </body>
+
 </html>
